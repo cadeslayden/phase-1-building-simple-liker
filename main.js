@@ -2,8 +2,13 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+const articleHearts = document.querySelector(".like-glyph")
 
+function callbackLike(e){
+  console.log(e)
+}
+
+const turnHeartRed = articleHearts.addEventListener("click", callbackLike)
 
 
 
